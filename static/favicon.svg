@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <!-- Green 4-Square Logo -->
+  <rect x="3" y="3" width="12" height="12" rx="3" fill="#4CAF50"/>
+  <rect x="17" y="3" width="12" height="12" rx="3" fill="#66BB6A"/>
+  <rect x="3" y="17" width="12" height="12" rx="3" fill="#81C784"/>
+  <rect x="17" y="17" width="12" height="12" rx="3" fill="#A5D6A7"/>
+</svg>

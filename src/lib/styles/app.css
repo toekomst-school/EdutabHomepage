@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================================
+CSS CUSTOM PROPERTIES - Shadcn/ui compatible
+============================================================================ */
+
+:root {
+	/* Primary brand color - green with dark foreground for WCAG AA compliance */
+	--primary: 76 175 80; /* #4CAF50 primary-green */
+	--primary-foreground: 38 38 38; /* #262626 neutral-800 - contrast ratio ~8:1 */
+
+	/* Secondary colors */
+	--secondary: 229 229 229; /* #E5E5E5 neutral-200 */
+	--secondary-foreground: 38 38 38; /* #262626 neutral-800 */
+
+	/* Accent colors */
+	--accent: 255 138 92; /* #FF8A5C coralLight */
+	--accent-foreground: 38 38 38; /* #262626 neutral-800 */
+
+	/* Destructive/error */
+	--destructive: 239 71 111; /* #EF476F pink */
+	--destructive-foreground: 255 255 255; /* #FFFFFF */
+
+	/* UI elements */
+	--background: 255 255 255; /* #FFFFFF */
+	--foreground: 38 38 38; /* #262626 neutral-800 */
+
+	/* Card/panel */
+	--card: 255 255 255; /* #FFFFFF */
+	--card-foreground: 38 38 38; /* #262626 */
+
+	/* Popovers */
+	--popover: 255 255 255; /* #FFFFFF */
+	--popover-foreground: 38 38 38; /* #262626 */
+
+	/* Borders and inputs */
+	--border: 229 229 229; /* #E5E5E5 neutral-200 */
+	--input: 229 229 229; /* #E5E5E5 neutral-200 */
+
+	/* Ring (focus indicator) */
+	--ring: 76 175 80; /* #4CAF50 primary-green */
+
+	/* Fluid Typography Scale */
+	--font-hero-title: clamp(1.5rem, 4vw + 0.5rem, 4.5rem);
+	--font-hero-subtitle: clamp(1rem, 2vw, 1.5rem);
+	--font-section-title: clamp(1.75rem, 3vw, 3rem);
+	--font-body-lg: clamp(1rem, 1.5vw, 1.25rem);
+	--font-body-base: clamp(0.875rem, 1.2vw, 1rem);
+	--font-button: clamp(0.875rem, 1.5vw, 1rem);
+
+	/* Fluid Spacing Scale */
+	--space-section-y: clamp(2rem, 5vw, 6rem);
+	--space-section-x: clamp(1rem, 3vw, 3rem);
+	--space-gap: clamp(0.5rem, 2vw, 1.5rem);
+	--space-gap-sm: clamp(0.25rem, 1vw, 0.75rem);
+
+	/* Header */
+	--header-height: clamp(60px, 10vh, 90px);
+}
+
+/* Fluid button sizing - scales with viewport width */
+.btn-fluid {
+	height: clamp(2.5rem, 1.5vw + 2rem, 3.5rem);
+	padding: clamp(0.5rem, 0.5vw + 0.375rem, 0.875rem) clamp(1rem, 1.5vw + 0.5rem, 2rem);
+	font-size: clamp(0.875rem, 1vw + 0.5rem, 1.25rem);
+	min-height: 2.5rem; /* 40px minimum touch target for accessibility */
+}
+
+/* Custom base styles for EduTab */
+@layer base {
+	* {
+		@apply border-neutral-200;
+	}
+
+	body {
+		@apply bg-white text-neutral-800 font-body;
+		font-feature-settings: 'rlig' 1, 'calt' 1;
+	}
+
+	/* Typography defaults */
+	h1, h2, h3, h4, h5, h6 {
+		@apply font-display font-bold;
+	}
+
+	h1 {
+		@apply text-5xl lg:text-6xl leading-tight;
+	}
+
+	h2 {
+		@apply text-4xl lg:text-5xl leading-tight;
+	}
+
+	h3 {
+		@apply text-3xl leading-tight;
+	}
+
+	h4 {
+		@apply text-2xl leading-tight;
+	}
+
+	h5 {
+		@apply text-xl leading-tight;
+	}
+
+	h6 {
+		@apply text-lg leading-tight;
+	}
+
+	/* Focus styles for accessibility */
+	:focus-visible {
+		@apply outline-2 outline-offset-2 outline-ring;
+	}
+
+	/* Selection color */
+	::selection {
+		@apply bg-primary-green text-neutral-900;
+	}
+}
+
+/* Floating animation for tablets */
+@keyframes float-tablet {
+	0%, 100% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(-16px);
+	}
+}
+
+.animate-float-tablet {
+	animation: float-tablet 4s ease-in-out infinite;
+}

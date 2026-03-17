@@ -1,0 +1,247 @@
+/**
+ * EduTab Base CSS - Typography System
+ * Provides CSS custom properties for type scale, line heights, and base reset
+ */
+
+/* ==========================================================================
+   CSS CUSTOM PROPERTIES - TYPE SCALE
+   ========================================================================== */
+
+:root {
+	/* Font sizes - Type scale (Major third: 1.250) */
+	--font-xs: 0.75rem;      /* 12px */
+	--font-sm: 0.875rem;     /* 14px */
+	--font-base: 1rem;       /* 16px */
+	--font-lg: 1.125rem;     /* 18px */
+	--font-xl: 1.25rem;      /* 20px */
+	--font-2xl: 1.5rem;      /* 24px */
+	--font-3xl: 1.875rem;    /* 30px */
+	--font-4xl: 2.25rem;     /* 36px */
+	--font-5xl: 3rem;        /* 48px */
+	--font-6xl: 3.75rem;     /* 60px */
+	--font-7xl: 4.5rem;      /* 72px */
+
+	/* Line heights */
+	--leading-tight: 1.1;
+	--leading-normal: 1.5;
+	--leading-relaxed: 1.75;
+
+	/* Letter spacing */
+	--tracking-tight: -0.04em;
+	--tracking-snug: -0.03em;
+	--tracking-normal: -0.02em;
+	--tracking-wide: -0.01em;
+	--tracking-wider: 0.01em;
+
+	/* Font weights */
+	--font-light: 300;
+	--font-normal: 400;
+	--font-medium: 500;
+	--font-semibold: 600;
+	--font-bold: 700;
+	--font-extrabold: 800;
+
+	/* Font families */
+	--font-display: 'Outfit', system-ui, -apple-system, sans-serif;
+	--font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+/* ==========================================================================
+   GOOGLE FONTS IMPORT
+   ========================================================================== */
+
+/* Outfit - Display font for headings */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+/* Plus Jakarta Sans - Body font for content */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+/* ==========================================================================
+   BASE RESET
+   ========================================================================== */
+
+*, *::before, *::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* ==========================================================================
+   BODY & BASE STYLES
+   ========================================================================== */
+
+html {
+	font-size: 100%; /* Respects user's browser/system font preference for accessibility */
+	scroll-behavior: smooth;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	-webkit-text-size-adjust: auto; /* Critical for iOS "Larger Text" accessibility */
+}
+
+body {
+	font-family: var(--font-body);
+	font-size: var(--font-base);
+	font-weight: var(--font-normal);
+	line-height: var(--leading-normal);
+	letter-spacing: var(--tracking-wider);
+	color: var(--neutral-800, #262626);
+	background-color: var(--mintCream, #F0FFF4);
+	min-height: 100vh;
+	min-height: 100dvh; /* Dynamic viewport height for mobile browsers */
+	overflow-x: hidden;
+}
+
+/* ==========================================================================
+   TYPOGRAPHY BASE STYLES
+   ========================================================================== */
+
+/* Headings use display font */
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font-display);
+	font-weight: var(--font-bold);
+	line-height: var(--leading-tight);
+	letter-spacing: var(--tracking-normal);
+	color: var(--neutral-900, #171717);
+	margin-bottom: 1rem;
+}
+
+h1 {
+	font-size: var(--font-5xl);
+	letter-spacing: var(--tracking-snug);
+}
+
+h2 {
+	font-size: var(--font-4xl);
+	letter-spacing: var(--tracking-normal);
+}
+
+h3 {
+	font-size: var(--font-3xl);
+}
+
+h4 {
+	font-size: var(--font-2xl);
+}
+
+h5 {
+	font-size: var(--font-xl);
+}
+
+h6 {
+	font-size: var(--font-lg);
+}
+
+/* Paragraphs and inline text */
+p {
+	margin-bottom: 1rem;
+	line-height: var(--leading-relaxed);
+}
+
+a {
+	color: var(--primary-coral, #FF6B35);
+	text-decoration: underline;
+	text-underline-offset: 2px;
+	transition: color 150ms ease;
+}
+
+a:hover {
+	color: var(--primary-greenDarker, #2E7D32);
+}
+
+a:focus-visible {
+	outline: 2px solid var(--primary-green, #4CAF50);
+	outline-offset: 2px;
+	border-radius: 3px;
+}
+
+/* Strong and emphasis */
+strong, b {
+	font-weight: var(--font-semibold);
+}
+
+em, i {
+	font-style: italic;
+}
+
+/* Small text */
+small {
+	font-size: var(--font-xs);
+	color: var(--neutral-600, #525252);
+}
+
+/* ==========================================================================
+   LIST STYLES
+   ========================================================================== */
+
+ul, ol {
+	margin-bottom: 1rem;
+	padding-left: 1.5rem;
+}
+
+li {
+	margin-bottom: 0.5rem;
+	line-height: var(--leading-normal);
+}
+
+/* ==========================================================================
+   MEDIA ELEMENTS
+   ========================================================================== */
+
+img, picture, video, canvas, svg {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+/* ==========================================================================
+   FORM ELEMENTS
+   ========================================================================== */
+
+input, button, textarea, select {
+	font: inherit;
+	color: inherit;
+}
+
+button {
+	cursor: pointer;
+	background: none;
+	border: none;
+}
+
+/* ==========================================================================
+   ACCESSIBILITY
+   ========================================================================== */
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+
+	*, *::before, *::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+	}
+}
+
+/* Focus visible for keyboard navigation */
+:focus-visible {
+	outline: 2px solid var(--primary-green, #4CAF50);
+	outline-offset: 2px;
+	border-radius: 3px;
+}
+
+/* Screen reader only class */
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
+}

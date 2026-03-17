@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="%lang%" dir="%dir%">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- Preload homepage hero image (needed immediately) -->
+		<link rel="preload" as="image" href="/classroom.webp" type="image/webp" />
+		<!-- Prefetch hero images for product pages (low priority, cached for future navigation) -->
+		<link rel="prefetch" as="image" href="/about.webp" />
+		<link rel="prefetch" as="image" href="/pricing.webp" />
+		<link rel="prefetch" as="image" href="/ecosystem.webp" />
+		<link rel="prefetch" as="image" href="/AppMarketplace.webp" />
+		<link rel="prefetch" as="image" href="/portal.webp" />
+		<link rel="prefetch" as="image" href="/tablets.webp" />
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+</html>
