@@ -15,6 +15,9 @@
 	<title>{m.page_home_title()}</title>
 	<meta name="description" content={m.page_home_description()} />
 
+	<!-- Preload hero image for faster LCP -->
+	<link rel="preload" as="image" href="/classroom.webp" type="image/webp" />
+
 	<!-- Open Graph tags -->
 	<meta property="og:title" content={m.page_home_title()} />
 	<meta property="og:description" content={m.page_home_og_description()} />

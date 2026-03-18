@@ -50,11 +50,7 @@
    GOOGLE FONTS IMPORT
    ========================================================================== */
 
-/* Outfit - Display font for headings */
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
-
-/* Plus Jakarta Sans - Body font for content */
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+/* Fonts are loaded via <link> in +layout.svelte for better performance */
 
 /* ==========================================================================
    BASE RESET

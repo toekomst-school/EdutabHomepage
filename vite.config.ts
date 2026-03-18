@@ -22,6 +22,9 @@ export default defineConfig({
 		// Optimize module preloading
 		modulePreload: {
 			polyfill: false
-		}
+		},
+		// Better minification
+		minify: 'esbuild',
+		target: 'es2020'
 	}
 });

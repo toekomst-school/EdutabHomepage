@@ -17,8 +17,8 @@
 	});
 
 	onMount(() => {
-		// Defer Chatwoot chat widget - load after 3 seconds for better initial page load
-		setTimeout(() => {
+		// Defer Chatwoot chat widget - load after page is idle
+		const loadChatwoot = () => {
 			(window as any).chatwootSettings = {
 				position: 'right',
 				type: 'standard',
@@ -27,25 +27,35 @@
 
 			const BASE_URL = 'https://chat.toekomst.org';
 			const g = document.createElement('script');
-			const s = document.getElementsByTagName('script')[0];
 			g.src = BASE_URL + '/packs/js/sdk.js';
 			g.async = true;
-			s.parentNode?.insertBefore(g, s);
+			g.defer = true;
+			document.body.appendChild(g);
 			g.onload = function () {
 				(window as any).chatwootSDK.run({
 					websiteToken: 'Dw2AfEZsD4t9LPyMUjf6ysVu',
 					baseUrl: BASE_URL
 				});
 			};
-		}, 3000);
+		};
+
+		// Use requestIdleCallback if available, otherwise setTimeout
+		if ('requestIdleCallback' in window) {
+			(window as any).requestIdleCallback(loadChatwoot, { timeout: 5000 });
+		} else {
+			setTimeout(loadChatwoot, 4000);
+		}
 	});
 </script>
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
 	<!-- Preconnect for Google Fonts for faster loading -->
-	<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+	<!-- Load fonts with display=swap for better FCP -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" />
 </svelte:head>
 
 <div class="flex min-h-screen flex-col overflow-x-hidden">
