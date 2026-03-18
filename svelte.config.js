@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-node';
 import { mdsvex } from 'mdsvex';
 import rehypeSlug from 'rehype-slug';
 import remarkGfm from 'remark-gfm';
