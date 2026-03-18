@@ -9,6 +9,7 @@
 	import BookOpen from '@lucide/svelte/icons/book-open';
 	import * as m from '$lib/paraglide/messages.js';
 	import { localizeHref } from '$lib/paraglide/runtime.js';
+	import { openChatwoot } from '$lib/utils/chatwoot';
 
 	let imageLoaded = $state(false);
 
@@ -239,7 +240,7 @@
 						<li>${m.faq_tech_compatible_2()}</li>
 						<li>${m.faq_tech_compatible_3()}</li>
 					</ul>
-					<p class="mt-3">${m.faq_tech_compatible_outro()} <a href="${localizeHref('/contact')}" class="text-primary-green underline hover:no-underline">${m.faq_tech_compatible_contact()}</a> ${m.faq_tech_compatible_outro2()}</p>`
+					<p class="mt-3">${m.faq_tech_compatible_outro()} <button onclick="window.$chatwoot && window.$chatwoot.toggle('open')" class="text-primary-green underline hover:no-underline cursor-pointer bg-transparent border-none p-0 font-inherit">${m.faq_tech_compatible_contact()}</button> ${m.faq_tech_compatible_outro2()}</p>`
 				},
 				{
 					id: 'other-devices',
@@ -327,7 +328,7 @@
 				{
 					id: 'onsite-training',
 					title: m.faq_support_onsite_title(),
-					content: `<p>${m.faq_support_onsite_intro()} <a href="${localizeHref('/contact')}" class="text-primary-green underline hover:no-underline">${m.faq_support_onsite_contact()}</a> ${m.faq_support_onsite_outro()}</p>`
+					content: `<p>${m.faq_support_onsite_intro()} <button onclick="window.$chatwoot && window.$chatwoot.toggle('open')" class="text-primary-green underline hover:no-underline cursor-pointer bg-transparent border-none p-0 font-inherit">${m.faq_support_onsite_contact()}</button> ${m.faq_support_onsite_outro()}</p>`
 				},
 				{
 					id: 'self-hosted-support',
@@ -442,9 +443,9 @@
 			<!-- Contact link -->
 			<p class="faq-hero-contact text-white/90">
 				{m.faq_hero_contact_prefix()}{' '}
-				<a href={localizeHref('/contact')} class="text-primary-coral underline hover:no-underline font-medium transition-colors duration-200">
+				<button onclick={openChatwoot} class="text-primary-coral underline hover:no-underline font-medium transition-colors duration-200 cursor-pointer bg-transparent border-none p-0">
 					{m.faq_hero_contact_link()}
-				</a>
+				</button>
 			</p>
 		</div>
 	</div>
@@ -515,7 +516,7 @@
 						<h3 class="text-xl font-semibold text-neutral-900">{m.faq_cta_contact_title()}</h3>
 						<p class="text-neutral-600 text-sm text-center">{m.faq_cta_contact_desc()}</p>
 					</div>
-					<Button href={localizeHref('/contact')} size="fluid" class="mt-4 bg-primary-green hover:bg-primary-greenDark text-white hover:text-white shadow-lg font-semibold">
+					<Button onclick={openChatwoot} size="fluid" class="mt-4 bg-primary-green hover:bg-primary-greenDark text-white hover:text-white shadow-lg font-semibold">
 						{m.faq_cta_contact_btn()}
 					</Button>
 				</div>

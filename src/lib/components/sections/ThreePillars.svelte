@@ -8,7 +8,8 @@
 	interface Pillar {
 		icon: string;
 		title: string;
-	 description: string;
+		subtitle: string;
+		description: string;
 	}
 
 	// Use $derived so pillars update when locale changes
@@ -16,19 +17,22 @@
 		{
 			icon: 'tablet',
 			title: m.three_pillars_tablets_title(),
-            description: m.three_pillars_tablets_description()
-        },
-        {
-            icon: 'apps',
-            title: m.three_pillars_marketplace_title(),
-            description: m.three_pillars_marketplace_description()
-        },
-        {
-            icon: 'monitor',
-            title: m.three_pillars_portal_title(),
-            description: m.three_pillars_portal_description()
-        }
-    ]);
+			subtitle: m.three_pillars_tablets_subtitle(),
+			description: m.three_pillars_tablets_description()
+		},
+		{
+			icon: 'apps',
+			title: m.three_pillars_marketplace_title(),
+			subtitle: m.three_pillars_marketplace_subtitle(),
+			description: m.three_pillars_marketplace_description()
+		},
+		{
+			icon: 'monitor',
+			title: m.three_pillars_portal_title(),
+			subtitle: m.three_pillars_portal_subtitle(),
+			description: m.three_pillars_portal_description()
+		}
+	]);
 
     let hoveredIndex = $state<number | null>(null);
 
@@ -118,9 +122,14 @@
                         </div>
 
                         <!-- Title -->
-                        <h4 class="font-display font-semibold text-neutral-800 mb-2">
+                        <h4 class="font-display font-semibold text-neutral-800 mb-1">
                             {pillar.title}
                         </h4>
+
+                        <!-- Subtitle -->
+                        <p class="text-sm font-medium text-primary-green mb-2">
+                            {pillar.subtitle}
+                        </p>
 
                         <!-- Description -->
                         <p class="text-neutral-600 leading-relaxed">

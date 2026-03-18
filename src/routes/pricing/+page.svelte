@@ -9,6 +9,7 @@
 	import Github from '@lucide/svelte/icons/github';
 	import * as m from '$lib/paraglide/messages.js';
 	import { localizeHref } from '$lib/paraglide/runtime.js';
+	import { openChatwoot } from '$lib/utils/chatwoot';
 
 	let includedFeatures = $derived([
 		m.pricing_included_feature_1(),
@@ -177,7 +178,7 @@
 					>
 						{m.pricing_start_trial_btn()}
 					</Button>
-					<Button variant="outline" href={localizeHref('/contact')} size="fluid">
+					<Button variant="outline" onclick={openChatwoot} size="fluid">
 						{m.pricing_contact_us()}
 					</Button>
 				</div>
@@ -409,7 +410,7 @@
 			>
 				{m.pricing_final_cta_trial()}
 			</Button>
-			<Button variant="outline" href={localizeHref('/contact')} size="fluid">
+			<Button variant="outline" onclick={openChatwoot} size="fluid">
 				{m.pricing_contact_us()}
 			</Button>
 		</div>

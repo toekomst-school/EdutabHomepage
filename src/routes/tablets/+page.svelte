@@ -8,6 +8,7 @@
 	import ExternalLink from '@lucide/svelte/icons/external-link';
 	import * as m from '$lib/paraglide/messages.js';
 	import { localizeHref } from '$lib/paraglide/runtime.js';
+	import { openChatwoot } from '$lib/utils/chatwoot';
 
 	let specsIncluded = $derived([
 		m.tablets_specs_included_tablet(),
@@ -341,7 +342,7 @@
 					</h3>
 					<p class="text-xl font-bold text-neutral-900 mb-2">{m.tablets_pricing_volume_price()}</p>
 					<p class="text-sm text-neutral-500 mb-4">{m.tablets_pricing_volume_desc()}</p>
-					<Button href={localizeHref("/contact")} variant="default" size="fluid" class="w-full">
+					<Button onclick={openChatwoot} variant="default" size="fluid" class="w-full">
 						{m.tablets_pricing_volume_btn()}
 						<ExternalLink class="ml-2 h-4 w-4" />
 					</Button>
@@ -698,7 +699,7 @@
 				</Button>
 
 				<Button
-					href={localizeHref("/contact")}
+					onclick={openChatwoot}
 					variant="outline"
 					size="fluid"
 					class="group w-full sm:w-auto border-2 border-white text-white hover:bg-white hover:text-neutral-900 bg-transparent"

@@ -5,7 +5,7 @@
 	import Section from './Section.svelte';
 	import Reveal from '$lib/components/Reveal.svelte';
 	import * as m from '$lib/paraglide/messages.js';
-	import { localizeHref } from '$lib/paraglide/runtime.js';
+	import { openChatwoot } from '$lib/utils/chatwoot';
 </script>
 
 <Section variant="accent" padding="spacious">
@@ -38,7 +38,7 @@
 			</Button>
 
 			<Button
-				href={localizeHref('/contact')}
+				onclick={openChatwoot}
 				variant="outline"
 				size="fluid"
 				class="group w-full sm:w-auto"

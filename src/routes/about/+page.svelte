@@ -3,8 +3,7 @@
 	import Section from '$lib/components/sections/Section.svelte';
 	import Reveal from '$lib/components/Reveal.svelte';
 	import Timeline from '$lib/components/Timeline.svelte';
-	import ContactForm from '$lib/components/ContactForm.svelte';
-	import Button from '$lib/components/ui/button/button.svelte';
+		import Button from '$lib/components/ui/button/button.svelte';
 	import User from '@lucide/svelte/icons/user';
 	import Mail from '@lucide/svelte/icons/mail';
 	import MapPin from '@lucide/svelte/icons/map-pin';
@@ -13,6 +12,7 @@
 	import Heart from '@lucide/svelte/icons/heart';
 	import * as m from '$lib/paraglide/messages.js';
 	import { localizeHref } from '$lib/paraglide/runtime.js';
+	import { openChatwoot } from '$lib/utils/chatwoot';
 
 	// Timeline events from Meester Chip's story
 	let timelineEvents = $derived([
@@ -111,7 +111,6 @@
 	backgroundImage="/about.webp"
 	backgroundAlt={m.aria_hero_about()}
 	primaryCta={{ label: m.about_hero_cta_primary(), href: "#story" }}
-	secondaryCta={{ label: m.about_hero_cta_secondary(), href: "#contact" }}
 	trialInfo={m.about_hero_trial_info()}
 	blur={1}
 	overlayIntensity="heavy"
@@ -258,7 +257,7 @@
 					<Github class="size-5" />
 					<span>{m.about_team_github()}</span>
 				</Button>
-				<Button href="#contact" size="fluid" class="bg-primary-green hover:bg-primary-greenDark text-white hover:text-white shadow-lg font-semibold rounded-xl gap-2">
+				<Button onclick={openChatwoot} size="fluid" class="bg-primary-green hover:bg-primary-greenDark text-white hover:text-white shadow-lg font-semibold rounded-xl gap-2">
 					<span>{m.about_team_join()}</span>
 					<ArrowRight class="size-5" />
 				</Button>
@@ -324,29 +323,6 @@
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-	</Reveal>
-</Section>
-
-<!-- Contact Form Section -->
-<Section variant="default" padding="compact" id="contact">
-	<Reveal delay={600}>
-		<div class="max-w-2xl mx-auto">
-			<div class="text-center mb-8">
-				<div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-primary-green to-primary-greenLight mb-4">
-					<Mail class="size-8 text-white" />
-				</div>
-				<h2 class="text-3xl md:text-4xl font-display font-bold text-neutral-900 mb-3">
-					{m.about_get_in_touch_title()}
-				</h2>
-				<p class="text-lg text-neutral-600">
-					{m.about_get_in_touch_subtitle()}
-				</p>
-			</div>
-
-			<div class="bg-white rounded-2xl p-8 md:p-12 shadow-lg border border-neutral-200">
-				<ContactForm />
 			</div>
 		</div>
 	</Reveal>

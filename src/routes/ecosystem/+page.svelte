@@ -9,6 +9,7 @@
 	import ExternalLink from '@lucide/svelte/icons/external-link';
 	import * as m from '$lib/paraglide/messages.js';
 	import { localizeHref } from '$lib/paraglide/runtime.js';
+	import { openChatwoot } from '$lib/utils/chatwoot';
 
 	interface Vendor {
 		name: string;
@@ -791,7 +792,7 @@
 				</Button>
 
 				<Button
-					href={localizeHref("/contact")}
+					onclick={openChatwoot}
 					variant="outline"
 					size="fluid"
 					class="group w-full sm:w-auto border-2 border-white text-white hover:bg-white hover:text-neutral-900 bg-transparent"

@@ -16,6 +16,16 @@
 			quote: m.testimonial_2_quote(),
 			author: m.testimonial_2_author(),
 			school: m.testimonial_2_school()
+		},
+		{
+			quote: m.testimonial_3_quote(),
+			author: m.testimonial_3_author(),
+			school: m.testimonial_3_school()
+		},
+		{
+			quote: m.testimonial_4_quote(),
+			author: m.testimonial_4_author(),
+			school: m.testimonial_4_school()
 		}
 	]);
 </script>

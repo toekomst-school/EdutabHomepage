@@ -158,9 +158,9 @@
 								</div>
 							</div>
 
-							<!-- Content card (centered on line on mobile with bg to cover line, alternating sides on desktop) -->
+							<!-- Content card (centered on line on mobile, alternating sides on desktop) -->
 							<div
-								class="w-full md:w-5/12 text-center md:text-left bg-white dark:bg-neutral-800 rounded-xl p-4 md:p-0 md:bg-transparent md:dark:bg-transparent shadow-md md:shadow-none border border-neutral-200 dark:border-neutral-700 md:border-0 z-10 timeline-content"
+								class="w-full md:w-5/12 text-center md:text-left bg-white dark:bg-neutral-800 rounded-xl p-4 md:p-6 shadow-md border border-neutral-200 dark:border-neutral-700 z-10 timeline-content"
 								style={getContentParallaxStyle(index)}
 							>
 								{#if event.year}
