@@ -544,7 +544,7 @@
 						</ul>
 					</div>
 
-					<Button href="https://github.com/edutab" variant="default" size="fluid">
+					<Button href="https://github.com/edutabeu" variant="default" size="fluid">
 						{m.portal_selfhost_cta()}
 						<ExternalLink class="ml-1 h-4 w-4" />
 					</Button>

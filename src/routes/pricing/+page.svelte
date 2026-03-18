@@ -341,7 +341,7 @@
 
 				<Button
 					variant="outline"
-					href="https://github.com/edutab"
+					href="https://github.com/edutabeu"
 					class="w-full sm:w-auto gap-2"
 				>
 					<Github class="w-4 h-4" />

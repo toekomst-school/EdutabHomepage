@@ -94,7 +94,7 @@
 					<h3 class="footer-heading">{m.footer_follow_us()}</h3>
 					<div class="footer-social">
 						<a
-							href="https://github.com/edutab"
+							href="https://github.com/edutabeu"
 							target="_blank"
 							rel="noopener noreferrer"
 							class="footer-social-link"

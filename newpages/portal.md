@@ -278,7 +278,7 @@ Run EduTab Portal on your own infrastructure. Free forever.
 - Budget constraints with IT capability
 - Organizations wanting full control
 
-[**Self-Hosting Guide**](https://github.com/edutab)
+[**Self-Hosting Guide**](https://github.com/edutabeu)
 
 ---
 

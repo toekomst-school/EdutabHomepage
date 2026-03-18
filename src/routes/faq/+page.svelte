@@ -269,7 +269,7 @@
 						<li>${m.faq_tech_selfhost_3()}</li>
 						<li>${m.faq_tech_selfhost_4()}</li>
 					</ul>
-					<p class="mt-3">${m.faq_tech_selfhost_outro()} <a href="https://github.com/edutab" class="text-primary-green underline hover:no-underline" target="_blank" rel="noopener noreferrer">${m.faq_tech_selfhost_github()}</a>.</p>`
+					<p class="mt-3">${m.faq_tech_selfhost_outro()} <a href="https://github.com/edutabeu" class="text-primary-green underline hover:no-underline" target="_blank" rel="noopener noreferrer">${m.faq_tech_selfhost_github()}</a>.</p>`
 				}
 			]
 		},

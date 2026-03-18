@@ -253,7 +253,7 @@
 				{m.about_team_growing()}
 			</p>
 			<div class="flex flex-col sm:flex-row gap-4 justify-center">
-				<Button href="https://github.com/edutab" size="fluid" class="bg-primary-green hover:bg-primary-greenDark text-white hover:text-white shadow-lg font-semibold rounded-xl gap-2">
+				<Button href="https://github.com/edutabeu" size="fluid" class="bg-primary-green hover:bg-primary-greenDark text-white hover:text-white shadow-lg font-semibold rounded-xl gap-2">
 					<Github class="size-5" />
 					<span>{m.about_team_github()}</span>
 				</Button>

@@ -92,7 +92,7 @@
 				<Button
 					variant="outline"
 					size="fluid"
-					href="https://github.com/edutab"
+					href="https://github.com/edutabeu"
 					target="_blank"
 					rel="noopener noreferrer"
 					class="hero-btn border-2 border-white text-white hover:bg-white hover:text-neutral-900 bg-transparent"
@@ -444,7 +444,7 @@
 						{m.os_repos_desc()}
 					</p>
 					<Button
-						href="https://github.com/edutab"
+						href="https://github.com/edutabeu"
 						target="_blank"
 						rel="noopener noreferrer"
 						variant="default"
@@ -718,7 +718,7 @@
 						{m.os_final_explore_desc()}
 					</p>
 					<Button
-						href="https://github.com/edutab"
+						href="https://github.com/edutabeu"
 						target="_blank"
 						rel="noopener noreferrer"
 						size="fluid"
@@ -742,7 +742,7 @@
 						{m.os_final_selfhost_desc()}
 					</p>
 					<Button
-						href="https://github.com/edutab"
+						href="https://github.com/edutabeu"
 						target="_blank"
 						rel="noopener noreferrer"
 						size="fluid"
