@@ -19,17 +19,17 @@
 	<meta property="og:title" content={m.page_home_title()} />
 	<meta property="og:description" content={m.page_home_og_description()} />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://edutab.toekomst.school" />
-	<meta property="og:image" content="https://edutab.toekomst.school/og-image.jpg" />
+	<meta property="og:url" content="https://edutab.eu" />
+	<meta property="og:image" content="https://edutab.eu/og-image.jpg" />
 
 	<!-- Twitter Card tags -->
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content={m.page_home_title()} />
 	<meta name="twitter:description" content={m.page_home_og_description()} />
-	<meta name="twitter:image" content="https://edutab.toekomst.school/twitter-image.jpg" />
+	<meta name="twitter:image" content="https://edutab.eu/twitter-image.jpg" />
 
 	<!-- Canonical URL -->
-	<link rel="canonical" href="https://edutab.toekomst.school" />
+	<link rel="canonical" href="https://edutab.eu" />
 </svelte:head>
 
 <!-- Hero section (no reveal - immediate display) -->

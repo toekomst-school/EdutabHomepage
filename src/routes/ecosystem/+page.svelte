@@ -143,7 +143,7 @@
 	subtitle={m.ecosystem_hero_subtitle()}
 	backgroundImage="/ecosystem.webp"
 	backgroundAlt={m.aria_hero_ecosystem()}
-	primaryCta={{ label: m.ecosystem_hero_cta_primary(), href: "#signup" }}
+	primaryCta={{ label: m.ecosystem_hero_cta_primary(), href: "https://portal.edutab.eu/register" }}
 	secondaryCta={{ label: m.ecosystem_hero_cta_secondary(), href: localizeHref("/pricing") }}
 	trialInfo={m.ecosystem_hero_trial_info()}
 	blur={1}
@@ -781,7 +781,7 @@
 		<Reveal delay={150}>
 			<div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6">
 				<Button
-					href="#signup"
+					href="https://portal.edutab.eu/register"
 					variant="default"
 					size="fluid"
 					class="group w-full sm:w-auto bg-primary-coral hover:bg-primary-coralDark text-white hover:text-white"

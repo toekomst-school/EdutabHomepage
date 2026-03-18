@@ -196,7 +196,7 @@
 			</a>
 
 			<!-- Desktop Navigation -->
-			<nav class="desktop-nav hidden min-[820px]:flex items-center gap-8">
+			<nav class="desktop-nav hidden min-[1024px]:flex items-center gap-8">
 				{#each navItems as item}
 					{#if item.children && item.children.length > 0}
 						<!-- Dropdown nav item -->
@@ -262,7 +262,7 @@
 			</nav>
 
 			<!-- Language Switcher & Desktop CTA -->
-			<div class="desktop-cta hidden min-[820px]:flex items-center gap-4">
+			<div class="desktop-cta hidden min-[1024px]:flex items-center gap-4">
 				<!-- Language Switcher -->
 				<div class="flex items-center gap-1">
 					{#each locales as locale}
@@ -281,7 +281,7 @@
 					{/each}
 				</div>
 
-				<Button href={localizeHref('/')} variant="default" size="fluid" class="font-medium bg-primary-coral hover:bg-primary-coralDark text-white hover:text-white">
+				<Button href="https://portal.edutab.eu/register" variant="default" size="fluid" class="font-medium bg-primary-coral hover:bg-primary-coralDark text-white hover:text-white">
 					{m.nav_start_free_trial()}
 				</Button>
 			</div>
@@ -289,7 +289,7 @@
 			<!-- Mobile Menu Button -->
 			<button
 				onclick={toggleMobileMenu}
-				class="mobile-menu-btn max-[819px]:flex min-[820px]:hidden p-1.5"
+				class="mobile-menu-btn max-[1023px]:flex min-[1024px]:hidden p-1.5"
 				aria-label={m.aria_toggle_menu()}
 				aria-expanded={mobileMenuOpen}
 			>

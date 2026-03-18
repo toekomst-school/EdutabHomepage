@@ -90,7 +90,7 @@
 		<!-- CTA Button -->
 		<Reveal delay={550}>
 		<div class="text-center">
-			<Button href={localizeHref('#signup')} size="fluid" class="bg-primary-coral hover:bg-primary-coralDark text-white hover:text-white shadow-lg font-semibold rounded-xl">
+			<Button href={'https://portal.edutab.eu/register'} size="fluid" class="bg-primary-coral hover:bg-primary-coralDark text-white hover:text-white shadow-lg font-semibold rounded-xl">
 				<span>{m.getting_started_cta()}</span>
 				<ChevronRight class="w-5 h-5" />
 			</Button>

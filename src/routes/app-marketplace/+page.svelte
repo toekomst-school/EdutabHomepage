@@ -171,7 +171,7 @@
 	backgroundImage="/AppMarketplace.webp"
 	backgroundAlt={m.aria_hero_marketplace()}
 	primaryCta={{ label: m.marketplace_hero_cta_primary(), href: "#browse" }}
-	secondaryCta={{ label: m.marketplace_hero_cta_secondary(), href: "#signup" }}
+	secondaryCta={{ label: m.marketplace_hero_cta_secondary(), href: "https://portal.edutab.eu/register" }}
 	trialInfo={m.marketplace_hero_trial_info()}
 	blur={1}
 	overlayIntensity="heavy"
@@ -821,7 +821,7 @@
 							</li>
 						{/each}
 					</ol>
-					<Button href="#signup" variant="default" size="fluid" class="bg-primary-green hover:bg-primary-greenDark text-white hover:text-white">
+					<Button href="https://portal.edutab.eu/register" variant="default" size="fluid" class="bg-primary-green hover:bg-primary-greenDark text-white hover:text-white">
 						{m.marketplace_on_android_cta()}
 					</Button>
 				</div>
@@ -922,7 +922,7 @@
 
 			<div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6">
 				<Button
-					href="#signup"
+					href="https://portal.edutab.eu/register"
 					variant="default"
 					size="fluid"
 					class="group w-full sm:w-auto bg-primary-coral hover:bg-primary-coralDark text-white hover:text-white"

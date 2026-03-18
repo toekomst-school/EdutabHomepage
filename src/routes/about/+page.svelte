@@ -312,8 +312,8 @@
 								<Mail class="size-5 text-neutral-500" />
 								<div>
 									<p class="text-sm text-neutral-500">{m.about_contact_email()}</p>
-									<a href="mailto:info@edutab.io" class="text-neutral-900 hover:text-primary-green transition-colors">
-										info@edutab.io
+									<a href="mailto:info@edutab.eu" class="text-neutral-900 hover:text-primary-green transition-colors">
+										info@edutab.eu
 									</a>
 								</div>
 							</div>
@@ -363,7 +363,7 @@
 				{m.about_final_cta_subtitle()}
 			</p>
 			<div class="flex flex-col sm:flex-row gap-4 justify-center">
-				<Button href={localizeHref('#signup')} size="fluid" class="bg-primary-coral hover:bg-primary-coralDark text-white hover:text-white shadow-lg font-semibold rounded-xl gap-2">
+				<Button href={'https://portal.edutab.eu/register'} size="fluid" class="bg-primary-coral hover:bg-primary-coralDark text-white hover:text-white shadow-lg font-semibold rounded-xl gap-2">
 					<span>{m.about_final_cta_primary()}</span>
 					<ArrowRight class="size-5" />
 				</Button>

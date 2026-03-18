@@ -79,17 +79,17 @@
 	<meta property="og:title" content={m.pricing_og_title()} />
 	<meta property="og:description" content={m.pricing_og_description()} />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://edutab.toekomst.school/pricing-school-tablet-management" />
-	<meta property="og:image" content="https://edutab.toekomst.school/og-image.jpg" />
+	<meta property="og:url" content="https://edutab.eu/pricing-school-tablet-management" />
+	<meta property="og:image" content="https://edutab.eu/og-image.jpg" />
 
 	<!-- Twitter Card tags -->
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content={m.pricing_og_title()} />
 	<meta name="twitter:description" content={m.pricing_og_description()} />
-	<meta name="twitter:image" content="https://edutab.toekomst.school/twitter-image.jpg" />
+	<meta name="twitter:image" content="https://edutab.eu/twitter-image.jpg" />
 
 	<!-- Canonical URL -->
-	<link rel="canonical" href="https://edutab.toekomst.school/pricing-school-tablet-management" />
+	<link rel="canonical" href="https://edutab.eu/pricing-school-tablet-management" />
 </svelte:head>
 
 <!-- 1. Hero Section -->
@@ -98,7 +98,7 @@
 	subtitle={m.pricing_hero_subtitle()}
 	backgroundImage="/pricing.webp"
 	backgroundAlt={m.aria_hero_pricing()}
-	primaryCta={{ label: m.pricing_hero_cta_primary(), href: "#signup" }}
+	primaryCta={{ label: m.pricing_hero_cta_primary(), href: "https://portal.edutab.eu/register" }}
 	secondaryCta={{ label: m.pricing_hero_cta_secondary(), href: "#compare" }}
 	trialInfo={m.pricing_hero_trial_info()}
 	blur={1}
@@ -171,7 +171,7 @@
 				<div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
 					<Button
 						variant="default"
-						href="#signup"
+						href="https://portal.edutab.eu/register"
 						size="fluid"
 						class="bg-primary-coral hover:bg-primary-coralDark text-white hover:text-white shadow-lg"
 					>
@@ -403,7 +403,7 @@
 		<div class="flex flex-col sm:flex-row gap-4 justify-center">
 			<Button
 				variant="default"
-				href="#signup"
+				href="https://portal.edutab.eu/register"
 				size="fluid"
 				class="bg-primary-coral hover:bg-primary-coralDark text-white hover:text-white shadow-lg"
 			>

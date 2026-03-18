@@ -525,7 +525,7 @@
 						<h3 class="text-xl font-semibold text-neutral-900">{m.faq_cta_trial_title()}</h3>
 						<p class="text-neutral-600 text-sm text-center">{m.faq_cta_trial_desc()}</p>
 					</div>
-					<Button href="#signup" size="fluid" class="mt-4 bg-primary-coral hover:bg-primary-coralDark text-white hover:text-white shadow-lg font-semibold">
+					<Button href="https://portal.edutab.eu/register" size="fluid" class="mt-4 bg-primary-coral hover:bg-primary-coralDark text-white hover:text-white shadow-lg font-semibold">
 						{m.faq_cta_trial_btn()}
 					</Button>
 				</div>

@@ -226,7 +226,7 @@
 			<!-- CTA Section -->
 			<div class="py-3 px-4 border-t border-neutral-200 bg-neutral-50 cta-section">
 				<Button
-					href={localizeHref('/')}
+					href="https://portal.edutab.eu/register"
 					size="fluid"
 					class="w-full bg-primary-coral hover:bg-primary-coralDark text-white hover:text-white shadow-lg font-semibold"
 					onclick={handleLinkClick}

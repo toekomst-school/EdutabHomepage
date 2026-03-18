@@ -138,7 +138,7 @@
 	subtitle={m.portal_hero_subtitle()}
 	backgroundImage="/portal.webp"
 	backgroundAlt={m.aria_hero_portal()}
-	primaryCta={{ label: m.portal_hero_cta_primary(), href: "#signup" }}
+	primaryCta={{ label: m.portal_hero_cta_primary(), href: "https://portal.edutab.eu/register" }}
 	secondaryCta={{ label: m.portal_hero_cta_secondary(), href: localizeHref("/pricing") }}
 	trialInfo={m.portal_hero_trial_info()}
 	blur={1}
@@ -734,7 +734,7 @@
 
 			<div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6">
 				<Button
-					href="#signup"
+					href="https://portal.edutab.eu/register"
 					variant="default"
 					size="fluid"
 					class="group w-full sm:w-auto bg-primary-coral hover:bg-primary-coralDark text-white hover:text-white"

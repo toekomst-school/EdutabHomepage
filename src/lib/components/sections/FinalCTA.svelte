@@ -28,7 +28,7 @@
 		<Reveal delay={150}>
 		<div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6">
 			<Button
-				href={localizeHref('#signup')}
+				href={'https://portal.edutab.eu/register'}
 				variant="default"
 				size="fluid"
 				class="group w-full sm:w-auto bg-primary-coral hover:bg-primary-coralDark text-white hover:text-white"

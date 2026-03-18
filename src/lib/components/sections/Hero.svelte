@@ -41,7 +41,7 @@
 				<Button
 					variant="default"
 					size="fluid"
-					href={localizeHref('#trial')}
+					href="https://portal.edutab.eu/register"
 					class="hero-btn bg-primary-coral hover:bg-primary-coralDark text-white hover:text-white shadow-lg"
 				>
 					{m.hero_cta_primary()}

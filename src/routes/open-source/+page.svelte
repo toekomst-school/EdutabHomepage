@@ -84,7 +84,7 @@
 				<Button
 					variant="default"
 					size="fluid"
-					href="#signup"
+					href="https://portal.edutab.eu/register"
 					class="hero-btn bg-primary-coral hover:bg-primary-coralDark text-white hover:text-white shadow-lg"
 				>
 					{m.os_hero_cta_trial()}
@@ -700,7 +700,7 @@
 					<p class="text-neutral-600 text-sm mb-6">
 						{m.os_final_try_desc()}
 					</p>
-					<Button href="#signup" size="fluid" class="w-full bg-primary-coral hover:bg-primary-coralDark text-white hover:text-white shadow-lg font-semibold">
+					<Button href="https://portal.edutab.eu/register" size="fluid" class="w-full bg-primary-coral hover:bg-primary-coralDark text-white hover:text-white shadow-lg font-semibold">
 						{m.os_final_try_btn()}
 					</Button>
 				</div>

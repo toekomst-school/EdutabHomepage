@@ -89,7 +89,7 @@
 	subtitle={m.tablets_hero_subtitle()}
 	backgroundImage="/tablets.webp"
 	backgroundAlt={m.aria_hero_tablets()}
-	primaryCta={{ label: m.tablets_hero_cta_primary(), href: "#signup" }}
+	primaryCta={{ label: m.tablets_hero_cta_primary(), href: "https://portal.edutab.eu/register" }}
 	secondaryCta={{ label: m.tablets_hero_cta_secondary(), href: localizeHref("/pricing") }}
 	trialInfo={m.tablets_hero_trial_info()}
 	blur={1}
@@ -688,7 +688,7 @@
 
 			<div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6">
 				<Button
-					href="#signup"
+					href="https://portal.edutab.eu/register"
 					variant="default"
 					size="fluid"
 					class="group w-full sm:w-auto bg-primary-coral hover:bg-primary-coralDark text-white hover:text-white"

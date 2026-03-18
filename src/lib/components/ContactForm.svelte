@@ -159,7 +159,7 @@
 		} catch (error) {
 			submitStatus = 'error';
 			submitMessage =
-				'Something went wrong. Please try again or contact us directly at support@edutab.io.';
+				'Something went wrong. Please try again or contact us directly at support@edutab.eu.';
 			console.error('Form submission error:', error);
 		} finally {
 			isSubmitting = false;
