@@ -107,7 +107,7 @@
 
 <!-- 2. What's Always Included Section -->
 <Reveal>
-	<Section variant="accent" padding="compact">
+	<Section id="compare" variant="accent" padding="compact">
 		<div class="max-w-4xl mx-auto">
 			<h2 class="text-3xl md:text-4xl font-display font-bold text-neutral-900 mb-4 text-center">
 				{m.pricing_included_title()}

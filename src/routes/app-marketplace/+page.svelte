@@ -317,7 +317,7 @@
 
 <!-- What's in the EduTab App Marketplace Section -->
 <Reveal>
-	<Section variant="default" padding="normal">
+	<Section id="browse" variant="default" padding="normal">
 		<div class="w-full">
 			<div class="text-center mb-12">
 				<h2 class="text-3xl md:text-4xl font-display font-bold text-neutral-900 mb-4">

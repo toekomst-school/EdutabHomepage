@@ -49,7 +49,7 @@
 				<Button
 					variant="outline"
 					size="fluid"
-					href={localizeHref('#learn-more')}
+					href="#learn-more"
 					class="hero-btn border-2 border-white text-white hover:bg-white hover:text-neutral-900 bg-transparent"
 				>
 					{m.hero_cta_secondary()}
@@ -83,7 +83,7 @@
 </section>
 
 <!-- Below-fold content section -->
-<section class="relative bg-gradient-to-b from-neutral-900 to-neutral-800 py-16 sm:py-20 lg:py-24">
+<section id="learn-more" class="relative bg-gradient-to-b from-neutral-900 to-neutral-800 py-16 sm:py-20 lg:py-24">
 	<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 		<p class="text-lg sm:text-xl lg:text-2xl text-neutral-200 leading-relaxed mb-6">
 			<strong class="text-primary-greenLight">{m.hero_below_fold_highlight()}</strong> {m.hero_below_fold_tagline()}
